@@ -1,0 +1,197 @@
+:root {
+  --mainBlue:#2a2a72;
+  --lightBlue:#009ffd;
+  --mainWhite:#f3f3f3;
+  --mainDark:#232528;
+  --mainYellow:#ffa400;
+ }
+ body{
+   /* font-family:"Anton", sans-serif !important; */
+   background:var(--mainWhite) !important;
+   color:var(--mainDark) !important;
+ }
+ .text-title{
+   font-family: 'Anton', cursive;
+   letter-spacing:0.3rem;
+   text-transform: uppercase; 
+ }
+ .text-blue{
+   color:var(--mainBlue);
+ }
+ .text-bright{
+   color:var(--lightBlue);
+ }
+ .btn-black{
+   background:transparent;
+   text-transform:capitalize;
+   font-size:0.8rem !important;
+   color:var(--mainDark);
+   border-radius: 0 !important;
+   border:0.1rem solid var(--mainDark) !important;
+ }
+ .btn-black:hover{
+   background:var(--mainDark) !important;
+   color:var(--mainWhite) !important;
+ }
+ 
+ /* logo image */
+ .navbar-brand { 
+   height: 100px!important;
+   width: 90px!important;
+   padding: 5px 5px!important;
+ }
+ 
+ /* Navbar li */
+ li {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   list-style: none;
+   padding: 0px 15px;
+   margin: 0px;
+   font-size: 20px;
+ }
+ li :hover{
+   color:var(red);
+   font-weight: bold;
+ }
+ .form-text{
+   margin-top: .25rem;
+   font-size: .875em;
+   color: #6c757d;
+ }
+ .count{
+  position: relative;
+  top: -40px;
+  right: 15px;
+ }
+ .bg-color{
+  background:var(--mainBlue);
+ }
+ .nav-link{
+  color:white !important;
+ }
+
+ .right-top-bar a{
+  text-decoration: none;
+ }
+ .wrap-menu-desktop{
+  background: white !important;
+  position: sticky ;
+  top: 0;
+ }
+ .main-menu li a{
+  text-decoration: none;
+ }
+ .carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #a3a3d2;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-color: #ffff99;
+}
+.decoration{
+  text-decoration: none;
+}
+
+/* Best Sales CSS */
+.fall-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.fall-item .mask,.fall-item .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.fall-item img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.fall-item p {
+  font-style: bold;
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  padding: 80px 20px 20px;
+}
+
+.fall-effect .mask {
+  background-color: #eee530cc;
+  top: -200px;
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out 0.5s;
+  -moz-transition: all 0.3s ease-out 0.5s;
+  -o-transition: all 0.3s ease-out 0.5s;
+  -ms-transition: all 0.3s ease-out 0.5s;
+  transition: all 0.3s ease-out 0.5s;
+}
+.fall-effect p {
+  color: #333;
+  -webkit-transform: translateY(-200px);
+  -moz-transform: translateY(-200px);
+  -o-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out 0.2s;
+  -moz-transition: all 0.2s ease-in-out 0.2s;
+  -o-transition: all 0.2s ease-in-out 0.2s;
+  -ms-transition: all 0.2s ease-in-out 0.2s;
+  transition: all 0.2s ease-in-out 0.2s;
+}
+
+.fall-effect:hover .mask {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Black(Opacity=100)";
+  filter: black(opacity=100);
+  opacity: 1;
+  top: 0px;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.fall-effect:hover p {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -ms-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
